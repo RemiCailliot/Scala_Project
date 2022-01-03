@@ -1,6 +1,11 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\reader.scala:16:53 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m            [33mcase[0m Array(Some(x),Some(y)) => Some(Point(x.toInt, y.toInt))[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                [31m^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter z of [33mmethod[0m [35mapply[0m in [33mobject[0m [35mPoint[0m: (x: Int, y: Int, z: Option[Int]): reader.Point[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\reader.scala:8:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m        Source.fromFile([31m"src/main/scala/file.csv"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m        .getLines()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m        .map(_.split([31m","[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m        .flatMap(Point.csvtoP)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m        .foreach(println)[0m
+[0m[[0m[31merror[0m] [0m[0m  |        [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |        Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m  |        Required: Iterator[P][0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

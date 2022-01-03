@@ -1,0 +1,10 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: initialized: JsonRpcNotificationMessage(2.0, initialized, {})[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: textDocument/didOpen: JsonRpcNotificationMessage(2.0, textDocument/didOpen, {"textDocument":{"uri":"file:///c%3A/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/src/main/scala/reader.scala","languageId":"scala","version":3,"text":"import scala.io.Source\r\nobject reader {\r\n    def parser[P](str: String, csvtoP : Array[String] => Option[P]): Any /*Iterator[P]*/ = {\r\n        Source.fromFile(\"src/main/scala/file.csv\")\r\n        .getLines()\r\n        .map(_.split(\",\"))\r\n        .flatMap(Point.csvtoP)\r\n        .foreach(println)\r\n    }\r\n    case class Point(x:Int, y: Int, z: Option[Int] = None)\r\n    //case class = plusieurs méthodes prédéfini\r\n    object Point {\r\n        def csvtoP(str:Array[String]) : Option[Any] = Option(str)\r\n        .map{_.map(_.trim)\r\n        .map(x => util.Try(x.toInt).toOption) match {\r\n            case Array(Some(x),Some(y)) => Some(Point(x.toInt, y.toInt))\r\n            case Array(Some(x),Some(y),Some(z)) => Some(Point(x.toInt, y.toInt,Some(z.toInt)))\r\n            case _ =>None\r\n            }\r\n        }\r\n    }\r\n}"}})[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-3.1.0\zinc\inc_compile_3.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 3 janv. 2022 16:54:57[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
