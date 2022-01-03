@@ -1,0 +1,47 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"104","parents":[]},"eventTime":1638201658883,"message":"Compiling scala-programming","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\Rémi\IdeaProjects\Scala Programming\target\scala-3.1.0\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to C:\\Users\\Rémi\\IdeaProjects\\Scala Programming\\target\\scala-3.1.0\\classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":74,"character":11},"end":{"line":74,"character":14}},"severity":1,"source":"sbt","message":"Not found: Num"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Rémi\IdeaProjects\Scala Programming\src\main\scala\main.scala:75:11 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m75 |[0m      [33mcase[0m Num(n) => n[0m
+[0m[[0m[31merror[0m] [0m[0m   |           [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           Not found: Num[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E006] Not Found Error: C:\\Users\\Rémi\\IdeaProjects\\Scala Programming\\src\\main\\scala\\main.scala:75:11 \u001b[0m\r\n\u001b[31m75 |\u001b[0m      \u001b[33mcase\u001b[0m Num(n) => n\r\n   |           \u001b[31m^^^\u001b[0m\r\n   |           Not found: Num"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":74,"character":21},"end":{"line":74,"character":22}},"severity":1,"source":"sbt","message":"Found:    (n : Any)\nRequired: Int"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\Rémi\IdeaProjects\Scala Programming\src\main\scala\main.scala:75:21 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m75 |[0m      [33mcase[0m Num(n) => n[0m
+[0m[[0m[31merror[0m] [0m[0m   |                     [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                     Found:    (n : Any)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                     Required: Int[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E007] Type Mismatch Error: C:\\Users\\Rémi\\IdeaProjects\\Scala Programming\\src\\main\\scala\\main.scala:75:21 \u001b[0m\r\n\u001b[31m75 |\u001b[0m      \u001b[33mcase\u001b[0m Num(n) => n\r\n   |                     \u001b[31m^\u001b[0m\r\n   |                     Found:    (n : Any)\r\n   |                     Required: Int"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":75,"character":11},"end":{"line":75,"character":14}},"severity":1,"source":"sbt","message":"Not found: Num"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Rémi\IdeaProjects\Scala Programming\src\main\scala\main.scala:76:11 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m76 |[0m      [33mcase[0m Num(e1,e2) => el.eval + e2.eval[0m
+[0m[[0m[31merror[0m] [0m[0m   |           [31m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |           Not found: Num[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E006] Not Found Error: C:\\Users\\Rémi\\IdeaProjects\\Scala Programming\\src\\main\\scala\\main.scala:76:11 \u001b[0m\r\n\u001b[31m76 |\u001b[0m      \u001b[33mcase\u001b[0m Num(e1,e2) => el.eval + e2.eval\r\n   |           \u001b[31m^^^\u001b[0m\r\n   |           Not found: Num"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":75,"character":25},"end":{"line":75,"character":27}},"severity":1,"source":"sbt","message":"Not found: el"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\Rémi\IdeaProjects\Scala Programming\src\main\scala\main.scala:76:25 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m76 |[0m      [33mcase[0m Num(e1,e2) => el.eval + e2.eval[0m
+[0m[[0m[31merror[0m] [0m[0m   |                         [31m^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                         Not found: el[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E006] Not Found Error: C:\\Users\\Rémi\\IdeaProjects\\Scala Programming\\src\\main\\scala\\main.scala:76:25 \u001b[0m\r\n\u001b[31m76 |\u001b[0m      \u001b[33mcase\u001b[0m Num(e1,e2) => el.eval + e2.eval\r\n   |                         \u001b[31m^^\u001b[0m\r\n   |                         Not found: el"})[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"four errors found"})[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"four errors found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":74,"character":11},"end":{"line":74,"character":14}},"severity":1,"source":"sbt","message":"Not found: Num"},{"range":{"start":{"line":74,"character":21},"end":{"line":74,"character":22}},"severity":1,"source":"sbt","message":"Found:    (n : Any)\nRequired: Int"},{"range":{"start":{"line":75,"character":11},"end":{"line":75,"character":14}},"severity":1,"source":"sbt","message":"Not found: Num"},{"range":{"start":{"line":75,"character":25},"end":{"line":75,"character":27}},"severity":1,"source":"sbt","message":"Not found: el"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"104","parents":[]},"eventTime":1638201659373,"message":"Compiled scala-programming","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"errors":4,"warnings":0,"time":490}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 29 nov. 2021 17:00:59[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

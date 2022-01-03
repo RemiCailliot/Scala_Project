@@ -1,0 +1,24 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"9","parents":[]},"eventTime":1638188046553,"message":"Compiling scala-programming","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":29,"character":2},"end":{"line":29,"character":16}},"severity":2,"source":"sbt","message":"A pure expression does nothing in statement position; you may be omitting necessary parentheses"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"9","parents":[]},"eventTime":1638188046573,"message":"Compiled scala-programming","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"errors":0,"warnings":1,"time":20}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"10","parents":[]},"eventTime":1638188046581,"message":"Compiling scala-programming-test","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Test"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"10","parents":[]},"eventTime":1638188046598,"message":"Compiled scala-programming-test","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Test"},"errors":0,"warnings":0,"time":17}})[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 29 nov. 2021 13:14:06[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / collectAnalyses[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0manalysis location (C:\Users\Rémi\IdeaProjects\Scala Programming\target\scala-3.1.0\zinc\inc_compile_3.zip,true)[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 0 s, completed 29 nov. 2021 13:14:06[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled request received: shutdown: JsonRpcRequestMessage(2.0, ♨1, shutdown, null})[0m

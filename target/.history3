@@ -1,0 +1,29 @@
+1637590905114:;set _root_.scala.collection.Seq(historyPath := None,shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("C:/Users/Rémi/AppData/Local/Temp/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "download, resolveClassifiers");apply -cp "C:/Users/Rémi/AppData/Roaming/JetBrains/IdeaIC2021.1/plugins/Scala/repo/org.jetbrains/sbt-structure-extractor/scala_2.12/sbt_1.0/2020.3/jars/sbt-structure-extractor.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+1638193748751:List("bonbour","ceci","est","un","best").flatmap(_)
+1638193893400:List("bonbour","ceci","est","un","best").flatMap(x=>x)
+1638193957843:run
+1638194268862:('a' to 'z').toList
+1638194300336:sbt console
+1638194302143:xit
+1638194303782:exit
+1638194392857:run
+1638194442260:exit
+1638195013250:run
+1638195026143:exit
+1638195459284:run
+1638195479628:exit
+1638195583551:quit
+1638195591167:escape
+1638195593532:skip
+1638195612388:exit
+1638195642825:run
+1638784094054:sbt console
+1638784099548:run
+1638784301562:sbt console
+1638784303805:run
+1638785583169:ru,
+1638785584580:run
+1638798030788:sbt
+1638798032438:run
+1638802470671:fromString(" 42,1 lala").foreach(_.foreach(println))
+1638802473306:run

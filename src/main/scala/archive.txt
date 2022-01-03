@@ -1,0 +1,161 @@
+ // def helloWorld = println("Hello World")
+  // case class Point(x:Int, y:Int, z:Int)
+
+  // def toTuple(classs: Point): (Int, Int, Int) =
+  //   (classs._1,classs._2,classs._3)
+  // def fromTuple(tupl:(Int,Int,Int)): Point =
+  //   (Point(tupl._1,tupl._2,tupl._3))
+  // toTuple(Point(2,5,6))
+  // fromTuple((2,5,6))
+  // def pow2(x:Int, n:Int, acc:Int=1) : Int = n match {
+  //   case m if m == 0 => acc
+  //   case m => pow2(x,m-1, acc*x)
+  // }
+  // println(pow2(410,10))
+
+  // def pow(x:Int, n : Int) :Option[BigInt] = {
+  //   def pow_hated(x:Int, n:Int, acc:BigInt):BigInt = n match {
+  //     case 0 => acc
+  //     case n => pow_hated(x,n-1,acc * x)
+  //   }
+  //   if (x<0){
+  //     None
+  //   } else {
+  //     Some(pow_hated(x,n,BigInt(1)))
+  //   }
+  // }
+  // println(pow(-1,2))
+
+
+  // def tf_int_to_str(list: List[Int]) : List[String] =
+  //   list.map(x=> x.toString())
+  // tf_int_to_str(List(1,2,3,4,5,5,6,7))
+
+  // def filter_list(list: List[Int]) : List[Int] =
+  //   list.map(_*2)
+  //   .filter(_%2==0)
+  // filter_list(List(1,2,3,4,5,5,6,7))
+
+  // def flatMap_list(list: List[Int]) : List[Int] =
+  //   list.map(_*2)
+  //   .filter(_%2==0)
+
+
+  // def test(list: List[Int]): Int=
+  //   list.foldLeft(0)((acc,el)=> if (el%3 ==0) acc+1 else acc)
+  //   list.groupBy(_%3==0) (true).size
+  // println("test vaut:" +test(List(1,2,3,4,5,9,5,6,7)))
+
+  // def list_string(list: List[String], letter: Char): Int=
+  //   list.flatMap(_.toLowerCase).filter(_==letter).size
+  // println("list_string vaut:" + list_string(List("bonbour","ceci","est","un","best"),'b'))
+  // println(List("bonbour","ceci","est","un","best").flatMap(x=>x))
+  // éviter le .toLowercase in flatMap et mieux vaut le .toSeq
+
+
+  def matchLength(list: List[Int],acc:Int=0): Int = list match {
+    case Nil => acc
+    case x::tail => matchLength(tail,acc+1)
+  }
+  println(matchLength(List(1,2,3,4,5,9,5,6,7)))
+
+
+  //case class point
+  //1er exo :companion object de point avec la méthode pour déserializer une chaîne de caractères en point, renvoyer en Option
+  // l'ADT disant qu'un fruit est soit une banane soit une pomme
+
+  case class Point(x:Int, y: Int)
+  //case class = plusieurs méthodes prédéfini
+  object Point {
+    def fromString(str:String) : Option[Any] = Option(str)
+    .map{_.split(",")
+    .map(_.trim)
+    .map(x => util.Try(x.toInt).toOption) match {
+      case Array(Some(x),Some(y)) => Some(Point(x.toInt,y.toInt))
+      case _ =>None
+      }
+    }
+  } 
+  //2ème exo:
+  sealed trait Fruit{}
+  case object pomme extends Fruit {}
+  case object banane extends Fruit {}
+
+  val list = List(1,2,3,4,5,5,6,7)
+
+  def last[T](list:List[T]) : Option[T] = list match {
+    case Nil => None
+    case head::Nil => Some(head)
+    case head::tail => last(tail)
+  }
+  println(last(list))
+  def nth[T](k : Int, list:List[T]) : Option[T] = (k,list) match {
+    case (0,head::tail) => Some(head)
+    case (k, head::tail) if (k>0) => nth(k-1, list.drop(1))
+    case _ => None
+  }
+  println(nth(5,list))
+
+  def reverse[T](list:List[T]) : Option[List[T]] = {
+    def reverse_acc[T](list:List[T], acc: List[T]) : Option[List[T]] = list match {
+      case Nil => None
+      case head::Nil => Some(head::acc)
+      case head::next => reverse_acc(next,head::acc)
+    }
+    reverse_acc(list,List())
+  }
+  println(reverse(list))
+
+// def compress[T](list:List[T]) : Option[List[T]] = {
+//     def compress_acc[T](list:List[T], acc: T) : Option[List[T]] = list match {
+//       case Nil => None
+//       case head::Nil => Some(head)
+//       case head::tail => if (tail==acc) list.drop(tail c) else => 
+//     }
+//     compress_acc(list,List())
+//   }
+//   println(compress(list))
+
+//instancier une carte de crédit en case class
+//check chaque paramètre d'une carte de crédit
+//obliger de passer par notre modèle
+// case class credit_card(card_numbers: String, validity_date: String, three_digits: String)
+//  object credit_card{
+//    def is_card_numbers(card_numbers2: String): Boolean = {
+//      card_numbers2.nonEmpty &&
+//      card_numbers2.forall(_.isDigit)
+//    }
+//    def is_validity_date(validity_date2: String) = try {
+//      java.time.LocalDate.parse(validity_date2, java.time.format.DateTimeFormatter.ofPattern("MM/YY"))
+//      } catch {
+//        case e: Exception => false
+//        }
+//    def is_three_digits(three_digits2: String) =
+//      three_digits2.forall(_.isDigit)
+//  }
+//  val cc = credit_card("1234 5678 9123 4567", "06/12", "456")
+//  println(credit_card.is_card_numbers(cc.card_numbers))
+//  println(credit_card.is_validity_date(cc.validity_date))
+//  println(credit_card.is_three_digits(cc.three_digits))
+//companion object avec date, numéro, triplet
+
+
+ 
+// case class credit_card(card_numbers: String, validity_date: String, three_digits: String)
+//  object credit_card{
+//    def is_card_numbers(card_numbers2: String): Boolean = {
+//      card_numbers2.nonEmpty &&
+//      card_numbers2.forall(_.isDigit)
+//    }
+//    def is_validity_date(validity_date2: String) = try {
+//      java.time.LocalDate.parse(validity_date2, java.time.format.DateTimeFormatter.ofPattern("MM/YY"))
+//      } catch {
+//        case e: Exception => false
+//        }
+//    def is_three_digits(three_digits2: String) =
+//      three_digits2.forall(_.isDigit)
+//  }
+//  val cc = credit_card("1234 5678 9123 4567", "06/12", "456")
+//  println(credit_card.is_card_numbers(cc.card_numbers))
+//  println(credit_card.is_validity_date(cc.validity_date))
+//  println(credit_card.is_three_digits(cc.three_digits))

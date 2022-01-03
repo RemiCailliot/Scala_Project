@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"60","parents":[]},"eventTime":1641218747999,"message":"Compiling scala-programming","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\Rémi\IdeaProjects\Scala Programming\target\scala-3.1.0\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 2 Scala sources to C:\\Users\\Rémi\\IdeaProjects\\Scala Programming\\target\\scala-3.1.0\\classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":17,"character":0},"end":{"line":17,"character":0}},"severity":1,"source":"sbt","message":"eof expected, but '}' found"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E040] Syntax Error: C:\Users\Rémi\IdeaProjects\Scala Programming\src\main\scala\main.scala:18:0 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m   |[31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |eof expected, but '}' found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E040] Syntax Error: C:\\Users\\Rémi\\IdeaProjects\\Scala Programming\\src\\main\\scala\\main.scala:18:0 \u001b[0m\r\n\u001b[31m18 |\u001b[0m}\r\n   |\u001b[31m^\u001b[0m\r\n   |eof expected, but '}' found"})[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"one error found"})[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"one error found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[{"range":{"start":{"line":17,"character":0},"end":{"line":17,"character":0}},"severity":1,"source":"sbt","message":"eof expected, but '}' found"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/src/main/scala/reader.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"60","parents":[]},"eventTime":1641218748204,"message":"Compiled scala-programming","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/IdeaProjects/Scala%20Programming/#scala-programming/Compile"},"errors":1,"warnings":0,"time":205}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 3 janv. 2022 15:05:48[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
