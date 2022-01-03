@@ -1,6 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E040] Syntax Error: C:\Users\Rémi\IdeaProjects\Scala Programming\src\main\scala\main.scala:18:0 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m}[0m
-[0m[[0m[31merror[0m] [0m[0m   |[31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |eof expected, but '}' found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\reader.scala:16:53 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m            [33mcase[0m Array(Some(x),Some(y)) => Some(Point(x.toInt, y.toInt))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                [31m^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |missing argument for parameter z of [33mmethod[0m [35mapply[0m in [33mobject[0m [35mPoint[0m: (x: Int, y: Int, z: Option[Int]): reader.Point[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

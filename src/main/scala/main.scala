@@ -1,10 +1,6 @@
 import scala.io.Source
 object main extends App{
-  case class Point(x:Int, y:Int, z:Option[Int])
-  //Source.fromFile(str).getLines.take(acc)
-  
-  def parse_csv(str:String): Option[Any] = Option(Source.fromFile(str).getLines)
-  }
+  reader.parser("src/main/scala/file.csv",reader.Point.csvtoP)
 
   //Pour le projet tout doit être sur github, chacun partage
   //le parsing prend en param une fonction avec des points en 2D ou 3D
