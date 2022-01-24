@@ -1,11 +1,10 @@
 import scala.io.Source
 object reader {
-    def parser[P](str: String, csvtoP : Array[String] => Option[P]): Iterator[P] = {
-        Source.fromFile("src/main/scala/file.csv")
+    def parser[P](str: String, csvtoP : Array[String] => Option[P]): /*Iterator[P]*/Any = {
+        Source.fromFile(str)
         .getLines()
         .map(_.split(","))
         .flatMap(Point.csvtoP)
-        .foreach(println)
     }
     case class Point(x:Int, y: Int, z: Option[Int] = None)
     //case class = plusieurs méthodes prédéfini

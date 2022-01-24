@@ -1,0 +1,36 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(;Test/compile; collectAnalyses, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(Test/compile, None, Some(CommandSource(network-1)))[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Processing event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"2","parents":[]},"eventTime":1641225315439,"message":"Compiling scala_project","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/#scala_project/Compile"}}})[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-3.1.0\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"compiling 1 Scala source to C:\\Users\\Rémi\\Desktop\\Efrei Paris\\M2\\Scala Programming\\repo_project\\Scala_Project\\target\\scala-3.1.0\\classes ..."})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/src/main/scala/reader.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/#scala_project/Compile"},"diagnostics":[{"range":{"start":{"line":3,"character":8},"end":{"line":7,"character":25}},"severity":1,"source":"sbt","message":"Found:    Unit\nRequired: Iterator[P]"}],"reset":false})[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\reader.scala:8:16 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m        Source.fromFile([31m"src/main/scala/file.csv"[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m        .getLines()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m        .map(_.split([31m","[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m        .flatMap(Point.csvtoP)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m        .foreach(println)[0m
+[0m[[0m[31merror[0m] [0m[0m  |        [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |        Found:    Unit[0m
+[0m[[0m[31merror[0m] [0m[0m  |        Required: Iterator[P][0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"\u001b[31m-- [E007] Type Mismatch Error: C:\\Users\\Rémi\\Desktop\\Efrei Paris\\M2\\Scala Programming\\repo_project\\Scala_Project\\src\\main\\scala\\reader.scala:8:16 \u001b[0m\r\n\u001b[31m4 |\u001b[0m        Source.fromFile(\u001b[31m\"src/main/scala/file.csv\"\u001b[0m)\r\n\u001b[31m5 |\u001b[0m        .getLines()\r\n\u001b[31m6 |\u001b[0m        .map(_.split(\u001b[31m\",\"\u001b[0m))\r\n\u001b[31m7 |\u001b[0m        .flatMap(Point.csvtoP)\r\n\u001b[31m8 |\u001b[0m        .foreach(println)\r\n  |        \u001b[31m^\u001b[0m\r\n  |        Found:    Unit\r\n  |        Required: Iterator[P]"})[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"one error found"})[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"one error found"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/src/main/scala/main.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/#scala_project/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/src/main/scala/reader.scala"},"buildTarget":{"uri":"file:/C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/#scala_project/Compile"},"diagnostics":[{"range":{"start":{"line":3,"character":8},"end":{"line":7,"character":25}},"severity":1,"source":"sbt","message":"Found:    Unit\nRequired: Iterator[P]"}],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"2","parents":[]},"eventTime":1641225324853,"message":"Compiled scala_project","status":2,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/R%C3%A9mi/Desktop/Efrei%20Paris/M2/Scala%20Programming/repo_project/Scala_Project/#scala_project/Compile"},"errors":1,"warnings":0,"time":9414}})[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched json error for requestId None: {"code":-32603,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"}[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":1,"message":"(Compile / \u001b[31mcompileIncremental\u001b[0m) Compilation failed"})[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 17 s, completed 3 janv. 2022 16:55:25[0m
+[0m[[0m[0mdebug[0m] [0m[0munmatched Done event for requestId None: None[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled request received: shutdown: JsonRpcRequestMessage(2.0, ♨1, shutdown, null})[0m

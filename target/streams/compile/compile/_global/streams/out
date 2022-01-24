@@ -1,11 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\reader.scala:8:16 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m4 |[0m        Source.fromFile([31m"src/main/scala/file.csv"[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m        .getLines()[0m
-[0m[[0m[31merror[0m] [0m[0m[31m6 |[0m        .map(_.split([31m","[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m[31m7 |[0m        .flatMap(Point.csvtoP)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m        .foreach(println)[0m
-[0m[[0m[31merror[0m] [0m[0m  |        [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m  |        Found:    Unit[0m
-[0m[[0m[31merror[0m] [0m[0m  |        Required: Iterator[P][0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\Reports.scala:2:4 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m2 |[0m    n[0m
+[0m[[0m[31merror[0m] [0m[0m  |    [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Found:    (n : Int)[0m
+[0m[[0m[31merror[0m] [0m[0m  |    Required: Option[Int][0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
