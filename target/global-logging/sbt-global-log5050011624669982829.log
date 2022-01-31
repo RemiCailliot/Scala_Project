@@ -123,3 +123,4 @@
 [0m[[0m[0minfo[0m] [0m[0msbt server started at local:sbt-server-1dbd3f44b31702b416d8[0m
 [0m[[0m[0mdebug[0m] [0m[0mWriting bsp connection file[0m
 [0m[[0m[0minfo[0m] [0m[0mstarted sbt server[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
