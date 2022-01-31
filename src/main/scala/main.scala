@@ -3,13 +3,13 @@ object MainApp extends App{
   val driver1 = new reactivemongo.api.AsyncDriver
   reader.parser("src/main/scala/file.csv",reader.Point.csvtoP)
   // you can also use the Java Scanner class, if desired
-  val scanner = new java.util.Scanner(System.in)
-  print("Query or Reports?")
-
-  val input = scanner.nextLine()
-  if (input=="Query" || input=="Reports"){
-    print(s"You choose $input")
-  } else { print(s"You choose poorly")}
+  while (!(scanner.nextLine.equals)=="Query" || !(scanner.nextLine.equals)=="Reports") //à tester
+    val scanner = new java.util.Scanner(System.in)
+    print("Query or Reports?")
+    val input = scanner.nextLine()
+    if (input=="Query" || input=="Reports"){
+      print(s"You choose $input")
+    } else { print(s"Please choose Query or Reports")}
 
   
   //Pour le projet tout doit être sur github, chacun partage
