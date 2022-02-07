@@ -4,10 +4,10 @@
 [0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\Reports.scala:14:9: not found: value pipeline[0m
 [0m[[0m[31merror[0m] [0m[0m        pipeline = List([0m
 [0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:30:15: not found: value highest_number_of_airports[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:24:15: not found: value highest_number_of_airports[0m
 [0m[[0m[31merror[0m] [0m[0m  val hnabc = highest_number_of_airports(airportsCollection)[0m
 [0m[[0m[31merror[0m] [0m[0m              ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:32:3: not found: value countries[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:26:3: not found: value countries[0m
 [0m[[0m[31merror[0m] [0m[0m  countries.onComplete({[0m
 [0m[[0m[31merror[0m] [0m[0m  ^[0m
 [0m[[0m[31merror[0m] [0m[0mfour errors found[0m

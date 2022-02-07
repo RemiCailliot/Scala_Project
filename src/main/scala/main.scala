@@ -21,12 +21,6 @@ object MainApp extends App{
 
   implicit def countryReader: BSONDocumentReader[Country] = Macros.reader[Country]
 
-  // def findCountry(name: String): Future[List[Country]] =
-  //   countriesCollection.flatMap(_.find(BSONDocument("continent" -> name)).cursor[Country]()
-  //   //.collect())
-  //   .collect[List](250, Cursor.FailOnError[List[Country]]()))
-  // val countries= findCountry("EU")
-
   val hnabc = highest_number_of_airports(airportsCollection)
 
   countries.onComplete({
