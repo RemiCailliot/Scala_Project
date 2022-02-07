@@ -1,5 +1,5 @@
 import scala.io.Source
-object reader {
+object Reader {
     def parser[P](str: String, csvtoP : Array[String] => Option[P]): /*Iterator[P]*/Any = {
         Source.fromFile(str)
         .getLines()

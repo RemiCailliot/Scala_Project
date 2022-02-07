@@ -1,8 +1,7 @@
-object model {
-    
-    case class airportObj(iso_country:String,/*ident:String*/)
-    case class CountryObj(country_code:String,country_name:String)
-    case class runwaysObj(surface:String,/*airports_ident:String*/)
+object Model {
+    case class Airport(iso_country:String)
+    case class Country(code:String,name:String,continent:String)
+    case class Runway(surface:String)
     /*ident:airport==airports_ident:runways*/
 
 }

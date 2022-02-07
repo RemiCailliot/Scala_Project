@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(3a2258ee-7ec7-4b0c-a851-3f1517b357c9), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:70:11: not found: value count_vote[0m
+[0m[[0m[31merror[0m] [0m[0m  println(count_vote(l,bibli))[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:70:22: not found: value l[0m
+[0m[[0m[31merror[0m] [0m[0m  println(count_vote(l,bibli))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:70:24: not found: value bibli[0m
+[0m[[0m[31merror[0m] [0m[0m  println(count_vote(l,bibli))[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 8 s, completed 31 janv. 2022 15:56:27[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

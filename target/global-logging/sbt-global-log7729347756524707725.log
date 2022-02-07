@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(61f082f9-24df-4a15-a2fd-9d0a40a3d184), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\Reports.scala:12:87: not found: type Aiport[0m
+[0m[[0m[31merror[0m] [0m[0m    def highest_number_of_airports(col:Future[BSONCollection],n:Int =10): Future[List[Aiport]] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\Reports.scala:13:13: value aggregatorContext is not a member of scala.concurrent.Future[reactivemongo.api.bson.collection.BSONCollection][0m
+[0m[[0m[31merror[0m] [0m[0m        col.aggregatorContext[BSONDocument]([0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\Reports.scala:14:9: not found: value pipeline[0m
+[0m[[0m[31merror[0m] [0m[0m        pipeline = List([0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:30:15: not found: value highest_number_of_airports[0m
+[0m[[0m[31merror[0m] [0m[0m  val hnabc = highest_number_of_airports(airportsCollection)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\main.scala:32:3: not found: value countries[0m
+[0m[[0m[31merror[0m] [0m[0m  countries.onComplete({[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 2 févr. 2022 17:11:24[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

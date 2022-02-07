@@ -1,5 +1,6 @@
 -Peut on passer par mongo pour faire un join?
--Qu'est-ce-que type of latitude?
--Que doit-on renvoyer avec le parseur, une liste d'objet ou autre chose?
+
+-Que doit-on renvoyer avec le parseur, une liste d'objet ou autre chose?Liste d'option d'objet
 -Doit-on mettre des valeurs par défaut dans les cases classes?
 Comment fonctionne org.scalatest.FunSuite
+checker sample parseur pour valdiité de la data ratio de ligne valide
