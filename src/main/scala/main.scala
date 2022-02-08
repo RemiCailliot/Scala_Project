@@ -1,49 +1,35 @@
-import scala.io.Source
-import scala.util.{Success, Failure}
-import scala.concurrent.Future
-import scala.concurrent.ExecutionContext.Implicits.global
-import reactivemongo.api.{ Cursor, DB, MongoConnection, AsyncDriver }
-import reactivemongo.api.MongoConnection.ParsedURI
-import reactivemongo.api.bson.{ BSONDocument,BSONDocumentWriter, BSONDocumentReader, Macros,document}
+import reactivemongo.api.MongoConnection
+import reactivemongo.api.bson.{BSONDocument, BSONDocumentReader, Macros}
 import reactivemongo.api.bson.collection.BSONCollection
-import Model._
-import Reader._
-import reactivemongo.api.commands.Command
+import model.Model.Country
+
+import scala.concurrent.{ExecutionContext, Future}
+
 object MainApp extends App{
+  import ExecutionContext.Implicits.global
   val mongoURL = "mongodb://localhost:27018"
   val dbName= "scala"
-  val mongoDriver = AsyncDriver()
-  val parsedURIFuture: Future[ParsedURI] = MongoConnection.fromString(mongoURL)
-  val connection: Future[MongoConnection] = parsedURIFuture.flatMap(u => mongoDriver.connect(u))
-  val db: Future[DB] = connection.flatMap(_.database(dbName))
-  val countriesCollection: Future[BSONCollection] = db.map(_.collection("countries"))
-  val airportsCollection: Future[BSONCollection] = db.map(_.collection("airports"))
+  val driver1 = new reactivemongo.api.AsyncDriver
+  val parsedUri = MongoConnection.fromString(mongoURL)
+  // Database and collections: Get references
+  val connection3 = parsedUri.flatMap(driver1.connect(_))
 
-  implicit def countryReader: BSONDocumentReader[Country] = Macros.reader[Country]
+  implicit val CountryReader: BSONDocumentReader[Country] = Macros.reader[Country]
 
-  val hnabc = highest_number_of_airports(airportsCollection)
+  println("hello")
+  def dbFromConnection(connection: Future[MongoConnection],dbName:String,collectionName:String): Future[BSONCollection] =
+    connection.flatMap(_.database("scala")).
+      map(_.collection("countries"))
 
-  countries.onComplete({
-    case Success(listCountry) => {
-      //Do something with my list
-      println(listCountry)
-    }
-    case Failure(e) => {
-      //Do something with my error
-      print("error")
-    }
-  })
+  val countriesDb = dbFromConnection(connection3,dbName,"countries")
+  val v = countriesDb.flatMap(_.find(BSONDocument()).cursor[Country]().collect[List]())
+  v.foreach(println)
+//  countriesCollection.foreach{ c : BSONCollection =>
+//    println(c.find(BSONDocument("name" -> "Andorra")).cursor[BSONDocument]().collect())
+//
+//
+//  }
 
-  hnabc.onComplete({
-    case Success(listCountry) => {
-      //Do something with my list
-      println(listCountry)
-    }
-    case Failure(e) => {
-      //Do something with my error
-      print("error")
-    }
-  })
 
 
 
