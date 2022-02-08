@@ -1,5 +1,15 @@
+package parser
+
 import scala.io.Source
 object Reader {
+
+
+    //def parsermongo[P](url:String,csvtocountrie: Array[String]=> Option[P]):
+
+    
+
+
+
     def parser[P](str: String, csvtoP : Array[String] => Option[P]): /*Iterator[P]*/Any = {
         Source.fromFile(str)
         .getLines()
