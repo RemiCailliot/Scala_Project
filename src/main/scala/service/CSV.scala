@@ -1,21 +1,37 @@
 package service
+import model.Airport.Airport
+import model.Country.Country
+
 import java.nio.file.{Files, Paths}
 import scala.jdk.CollectionConverters.IteratorHasAsScala
+import reactivemongo.api.bson.collection.BSONCollection
+import reactivemongo.api.commands.WriteResult
+import reactivemongo.api.bson.{BSONDocument, BSONDocumentReader, Macros}
+
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
+import scala.util.{Failure, Success}
+
 
 final case class ReadResult[A](lines: Iterator[A], nbInvalidLine: Int)
 
+
 object CSV {
-    def read[A](fileName: String, parseLine: Array[String] => Option[A], regex: String = ",") = {
-        val (parsedLine, invalidLine) = Option(Files.lines(Paths.get(s"src/main/data/$fileName")))
-          .map(_.iterator().asScala)
-          .getOrElse(Iterator.empty) // if file can't be read option will be a none.
-          .drop(1) // drop csv header
-          .map(_.split(regex)) //you may want to use a regexp here
-          .map(_.map(_.trim))
-          .map(parseLine)
-          .partition(_.isDefined)
-        ReadResult(parsedLine.flatten, invalidLine.size)
-    }
+  def read[A](fileName: String, parseLine: Array[String] => Option[A], regex: String = ",") = {
+    val (parsedLine, invalidLine) = Option(Files.lines(Paths.get(s"src/main/data/$fileName")))
+      .map(_.iterator().asScala)
+      .getOrElse(Iterator.empty) // if file can't be read option will be a none.
+      .drop(1) // drop csv header
+      .map(_.split(regex)) //you may want to use a regexp here
+      .map(_.map(_.trim))
+      .map(parseLine)
+      .partition(_.isDefined)
+    ReadResult(parsedLine.flatten, invalidLine.size)
+  }
+
+  def write[A](coll: Future[BSONCollection], docs: Iterator[Any], insertLine: (Option[A], Future[BSONCollection]) => Unit): Unit = {
+    val result = docs.map(insertLine)
+  }
 }
 
 

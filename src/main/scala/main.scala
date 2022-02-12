@@ -43,6 +43,7 @@ object MainApp extends App{
 
 
 
+
   // reader.parser("src/main/scala/file.csv",reader.Point.csvtoP)
   // // you can also use the Java Scanner class, if desired
   // val scanner = new java.util.Scanner(System.in)
