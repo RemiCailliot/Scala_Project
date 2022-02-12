@@ -14,32 +14,30 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\MainApp.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model$Airport$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model$Airport$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model$Airport.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model$Airport.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model$Country$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model$Country$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model$Country.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model$Country.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model$Runway$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model$Runway$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model$Runway.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model$Runway.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	model\Model.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Model.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	parser[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\parser[0m
-[0m[[0m[0mdebug[0m] [0m[0m	parser\Reader$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\parser\Reader$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	parser\Reader$Point$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\parser\Reader$Point$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	parser\Reader$Point.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\parser\Reader$Point.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	parser\Reader.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\parser\Reader.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Airport$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Airport$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Airport$Airport$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Airport$Airport$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Airport$Airport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Airport$Airport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Airport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Airport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Country$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Country$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Country$Country$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Country$Country$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Country$Country.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Country$Country.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Country.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Country.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Runway$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Runway$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Runway$Runway$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Runway$Runway$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Runway$Runway.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Runway$Runway.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Runway.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\model\Runway.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	request[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\request[0m
 [0m[[0m[0mdebug[0m] [0m[0m	request\Queries$.class[0m
@@ -50,4 +48,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\request\Reports$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	request\Reports.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\request\Reports.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\service[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service\CSV$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\service\CSV$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service\CSV.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\service\CSV.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service\ReadResult$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\service\ReadResult$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	service\ReadResult.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\target\scala-2.13\classes\service\ReadResult.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

@@ -1,8 +1,9 @@
+import model.Country._
 import reactivemongo.api.MongoConnection
-import reactivemongo.api.bson.{BSONDocument, BSONDocumentReader, Macros}
 import reactivemongo.api.bson.collection.BSONCollection
-import model.Model._
-import parser.Reader._
+import reactivemongo.api.bson.{BSONDocument, BSONDocumentReader, Macros}
+import service.CSV
+
 import scala.concurrent.{ExecutionContext, Future}
 
 
@@ -25,7 +26,9 @@ object MainApp extends App{
   val countriesDb = dbFromConnection(connection3,dbName,"countries")
   val v = countriesDb.flatMap(_.find(BSONDocument()).cursor[Country]().collect[List]())
   //v.foreach(println)
-  val y = parserCountry("csv/countries.csv")
+  val x = CSV.read("countries.csv",Country.csvToCountry)
+  println(x.nbInvalidLine)
+  x.lines.foreach(println)
 
 
 

@@ -1,11 +1,6 @@
-package parser
-import model.Model.Country
-
-package fileReader.service
-
-import java.nio.file.{Files, Paths,Path}
+package service
+import java.nio.file.{Files, Paths}
 import scala.jdk.CollectionConverters.IteratorHasAsScala
-
 
 final case class ReadResult[A](lines: Iterator[A], nbInvalidLine: Int)
 
