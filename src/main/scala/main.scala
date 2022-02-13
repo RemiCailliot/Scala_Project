@@ -43,10 +43,6 @@ object MainApp extends App{
 
   getChoice
 
-  val getr = report2(CSV.read("airports.csv", Airport.csvToAirport).lines,
-    CSV.read("countries.csv", Country.csvToCountry).lines,
-    CSV.read("runways.csv", Runway.csvToRunway).lines).head.head._1
-  println(getr)
 
 
 
