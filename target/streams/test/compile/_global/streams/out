@@ -1,4 +1,16 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\test\scala\test.scala:11:5: '}' expected but eof found.[0m
-[0m[[0m[31merror[0m] [0m[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m   ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\projet scala v3\Scala_Project\src\test\scala\test.scala:12:125: Some[scala.collection.immutable.Map[String,Double]] does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m    assert(report1(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines)("United States") == )[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\projet scala v3\Scala_Project\src\test\scala\test.scala:16:20: value highest_number_of_airports is not a member of object request.Reports[0m
+[0m[[0m[31merror[0m] [0m[0m    assert(Reports.highest_number_of_airports() == 8)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\projet scala v3\Scala_Project\src\test\scala\test.scala:12:143: postfix operator == needs to be enabled[0m
+[0m[[0m[31merror[0m] [0m[0mby making the implicit value scala.language.postfixOps visible.[0m
+[0m[[0m[31merror[0m] [0m[0m----[0m
+[0m[[0m[31merror[0m] [0m[0mThis can be achieved by adding the import clause 'import scala.language.postfixOps'[0m
+[0m[[0m[31merror[0m] [0m[0mor by setting the compiler option -language:postfixOps.[0m
+[0m[[0m[31merror[0m] [0m[0mSee the Scaladoc for value scala.language.postfixOps for a discussion[0m
+[0m[[0m[31merror[0m] [0m[0mwhy the feature needs to be explicitly enabled.[0m
+[0m[[0m[31merror[0m] [0m[0m    assert(report1(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines)("United States") == )[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
