@@ -1,6 +1,7 @@
 
 import model.{Airport, Country, Runway}
 import reactivemongo.api.MongoConnection
+import request.Queries.query1
 import request.Reports.{report1, report2, report3}
 import service.CSV
 
@@ -41,7 +42,8 @@ object MainApp extends App{
   println(report2(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines,CSV.read("runways.csv",Runway.csvToRunway).lines))
   println("\n")
   println(report3(CSV.read("runways.csv",Runway.csvToRunway).lines))
-
+  println("\n")
+  print(query1("Andorra",CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines,CSV.read("runways.csv",Runway.csvToRunway).lines))
 
 
 
