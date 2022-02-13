@@ -12,8 +12,9 @@ class TestApp extends AnyFunSuite {
   test("report2 assert") {
     val getr2 = report2(CSV.read("airports.csv", Airport.csvToAirport).lines,
       CSV.read("countries.csv", Country.csvToCountry).lines,
-      CSV.read("runways.csv", Runway.csvToRunway).lines).head.head._1
-    assert(getr2 == ("ae", List("asp", "mac", "unk", "asphalt", "u")))
+      CSV.read("runways.csv", Runway.csvToRunway).lines).head.head._2.map(x=> x.replaceAll("\"", ""))
+    println(getr2)
+    assert(getr2 == List("asp", "mac", "unk", "asphalt", "u"))
   }
   test("report3 assert") {
     val getr3 = report3(CSV.read("runways.csv", Runway.csvToRunway).lines).head.head._2
