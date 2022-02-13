@@ -1,10 +1,10 @@
-import model.Country._
+
+import model.{Airport, Country}
 import reactivemongo.api.MongoConnection
-import reactivemongo.api.bson.collection.BSONCollection
-import reactivemongo.api.bson.{BSONDocument, BSONDocumentReader, Macros}
+import request.Reports.report1
 import service.CSV
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.ExecutionContext
 
 
 object MainApp extends App{
@@ -16,19 +16,22 @@ object MainApp extends App{
   // Database and collections: Get references
   val connection3 = parsedUri.flatMap(driver1.connect(_))
 
-  implicit val CountryReader: BSONDocumentReader[Country] = Macros.reader[Country]
+  //implicit val CountryReader: BSONDocumentReader[Country] = Macros.reader[Country]
 
   println("hello")
-  def dbFromConnection(connection: Future[MongoConnection],dbName:String,collectionName:String): Future[BSONCollection] =
-    connection.flatMap(_.database("scala")).
-      map(_.collection("countries"))
-
-  val countriesDb = dbFromConnection(connection3,dbName,"countries")
-  val v = countriesDb.flatMap(_.find(BSONDocument()).cursor[Country]().collect[List]())
+//  def dbFromConnection(connection: Future[MongoConnection],dbName:String,collectionName:String): Future[BSONCollection] =
+//    connection.flatMap(_.database("scala")).
+//      map(_.collection("countries"))
+//
+//  val countriesDb = dbFromConnection(connection3,dbName,"countries")
+//  val v = countriesDb.flatMap(_.find(BSONDocument()).cursor[Country]().collect[List]())
   //v.foreach(println)
-  val x = CSV.read("countries.csv",Country.csvToCountry)
-  println(x.nbInvalidLine)
-  x.lines.foreach(println)
+  val countryIt = CSV.read("countries.csv",Country.csvToCountry)
+  val airportIt = CSV.read("airports.csv",Airport.csvToAirport)
+  //val runwayIt = CSV.read("runways.csv",Runway.csvToRunway)
+  println(countryIt.nbInvalidLine)
+  //countryIt.lines.foreach(println)
+  println(report1(airportIt.lines,countryIt.lines))
 
 
 

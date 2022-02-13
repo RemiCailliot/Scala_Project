@@ -1,16 +1,6 @@
 package service
-import model.Airport.Airport
-import model.Country.Country
-
 import java.nio.file.{Files, Paths}
 import scala.jdk.CollectionConverters.IteratorHasAsScala
-import reactivemongo.api.bson.collection.BSONCollection
-import reactivemongo.api.commands.WriteResult
-import reactivemongo.api.bson.{BSONDocument, BSONDocumentReader, Macros}
-
-import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.Future
-import scala.util.{Failure, Success}
 
 
 final case class ReadResult[A](lines: Iterator[A], nbInvalidLine: Int)
@@ -29,9 +19,9 @@ object CSV {
     ReadResult(parsedLine.flatten, invalidLine.size)
   }
 
-  def write[A](coll: Future[BSONCollection], docs: Iterator[Any], insertLine: (Option[A], Future[BSONCollection]) => Unit): Unit = {
-    val result = docs.map(insertLine)
-  }
+//  def write[A](coll: Future[BSONCollection], docs: Iterator[Any], insertLine: (Option[A], Future[BSONCollection]) => Unit): Unit = {
+//    val result = docs.map(insertLine)
+//  }
 }
 
 
