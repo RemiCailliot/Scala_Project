@@ -1,7 +1,7 @@
 
-import model.{Airport, Country}
+import model.{Airport, Country, Runway}
 import reactivemongo.api.MongoConnection
-import request.Reports.report1
+import request.Reports.{report1, report2, report3}
 import service.CSV
 
 import scala.concurrent.ExecutionContext
@@ -26,13 +26,21 @@ object MainApp extends App{
 //  val countriesDb = dbFromConnection(connection3,dbName,"countries")
 //  val v = countriesDb.flatMap(_.find(BSONDocument()).cursor[Country]().collect[List]())
   //v.foreach(println)
-  val countryIt = CSV.read("countries.csv",Country.csvToCountry)
-  val airportIt = CSV.read("airports.csv",Airport.csvToAirport)
-  //val runwayIt = CSV.read("runways.csv",Runway.csvToRunway)
-  println(countryIt.nbInvalidLine)
-  //countryIt.lines.foreach(println)
-  println(report1(airportIt.lines,countryIt.lines))
+  //val airportIt = CSV.read("airports.csv",Airport.csvToAirport).lines
+  //val countryIt = CSV.read("countries.csv",Country.csvToCountry).lines
+  //val runwayIt = CSV.read("runways.csv",Runway.csvToRunway).lines
+  //CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines,CSV.read("runways.csv",Runway.csvToRunway).lines
 
+  println("\n")
+  println("Airport missing values : " +CSV.read("airports.csv",Airport.csvToAirport).nbInvalidLine)
+  println("Country missing values : "+CSV.read("countries.csv",Country.csvToCountry).nbInvalidLine)
+  println("Runway missing values : "+CSV.read("runways.csv",Runway.csvToRunway).nbInvalidLine)
+  println("\n")
+  println(report1(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines))
+  println("\n")
+  println(report2(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines,CSV.read("runways.csv",Runway.csvToRunway).lines))
+  println("\n")
+  println(report3(CSV.read("runways.csv",Runway.csvToRunway).lines))
 
 
 

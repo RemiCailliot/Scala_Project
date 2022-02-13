@@ -5,15 +5,21 @@ import reactivemongo.api.bson.collection.BSONCollection
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-import scala.util.{Failure, Success}
+import scala.util.{Failure, Success, Try}
 
 object Airport {
-  case class Airport(name:String,latitude_deg:String,longitude_deg:String,elevation_ft:String,continent:String,iso_country:String,iso_region:String)
-  //TODO a try for longitude et latitude
+  case class Airport(ident: String, name: String, latitude_deg: String, longitude_deg: String, elevation_ft: String, continent: String, iso_country: String, iso_region: String)
+
+  //TODO a try toLong for longitude et latitude
   implicit val userFormat2 = Macros.handler[Airport]
 
   def csvToAirport(list: Array[String]): Option[Airport] =
-    Some(Airport(list(3),list(4), list(5), list(6),list(7),list(8),list(9)))
+    (Try(list(1).toString).toOption, Try(list(8).toString).toOption) match {
+      case (Some(x), Some(y)) => Some(Airport(x, list(3), list(4), list(5), list(6), list(7), y, list(9)))
+      case (Some(x), None) => None
+      case (None, Some(y)) => None
+      case (None, None) => None
+    }
 
   def airportToMongo(c: Airport, coll: Future[BSONCollection]): Unit = {
     val result = coll.flatMap(x => x.insert.one(c))
