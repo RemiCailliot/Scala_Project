@@ -1,7 +1,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging D:\projet scala v2\Scala_Project\target\scala-2.13\scala_project_2.13-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	MainApp$$anon$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\MainApp$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MainApp$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\MainApp$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MainApp$delayedInit$body.class[0m
@@ -10,6 +8,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\MainApp.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Airport$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Airport$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Airport$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Airport$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Airport$Airport$.class[0m
@@ -18,6 +18,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Airport$Airport.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Airport.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Airport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Country$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Country$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Country$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Country$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Country$Country$.class[0m
@@ -26,6 +28,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Country$Country.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Country.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Country.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	model\Runway$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Runway$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Runway$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\model\Runway$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	model\Runway$Runway$.class[0m
@@ -54,10 +58,4 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\service\ReadResult$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	service\ReadResult.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\service\ReadResult.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	writer[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\writer[0m
-[0m[[0m[0mdebug[0m] [0m[0m	writer\Writer$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\writer\Writer$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	writer\Writer.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  D:\projet scala v2\Scala_Project\target\scala-2.13\classes\writer\Writer.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

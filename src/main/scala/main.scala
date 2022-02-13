@@ -1,10 +1,12 @@
 
+
 import model.{Airport, Country}
 import reactivemongo.api.MongoConnection
 import request.Reports.report1
 import service.CSV
 
 import scala.concurrent.ExecutionContext
+import scala.io.StdIn.readLine
 
 
 object MainApp extends App{
@@ -27,13 +29,26 @@ object MainApp extends App{
 //  val v = countriesDb.flatMap(_.find(BSONDocument()).cursor[Country]().collect[List]())
   //v.foreach(println)
   val countryIt = CSV.read("countries.csv",Country.csvToCountry)
-  val airportIt = CSV.read("airports.csv",Airport.csvToAirport)
+  val airportIt = CSV.read("airports.csv", Airport.csvToAirport)
   //val runwayIt = CSV.read("runways.csv",Runway.csvToRunway)
   println(countryIt.nbInvalidLine)
   //countryIt.lines.foreach(println)
-  println(report1(airportIt.lines,countryIt.lines))
+  println(report1(airportIt.lines, countryIt.lines))
+
+  //reader.parser("src/main/scala/file.csv", reader.Point.csvtoP)
+  //// you can also use the Java Scanner class, if desired
+//  val scanner = new java.util.Scanner(System.in)
+  //print("Queries or Reports?")
+  //val input = scanner.nextLine()
+  //if (input == "Queries" || input == "Reports") {
+  //  print(s"You choose $input\n")
+  //} else {
+  //  print(s"Please choose either Query or Reports")
+  //}
 
 
+
+  //scanner.close();
 
 
 

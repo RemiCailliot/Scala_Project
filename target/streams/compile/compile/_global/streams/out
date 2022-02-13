@@ -1,9 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mD:\projet scala v2\Scala_Project\src\main\scala\service\CSV.scala:32:62: could not find implicit value for parameter writer: y.pack.Writer[A][0m
-[0m[[0m[31merror[0m] [0m[0m        val result = docs.map(x=>coll.flatMap(y=>y.insert.one(x)))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0mD:\projet scala v2\Scala_Project\src\main\scala\service\CSV.scala:34:23: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
-[0m[[0m[31merror[0m] [0m[0m required: Option[A][0m
-[0m[[0m[31merror[0m] [0m[0m        result.foreach{x=>x.onComplete[0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\projet scala v2\Scala_Project\src\main\scala\test.scala:14:40: could not find implicit value for parameter writer: personColl.pack.Writer[Person][0m
+[0m[[0m[31merror[0m] [0m[0m    val future2 = personColl.insert.one(person)[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
