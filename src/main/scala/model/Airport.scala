@@ -15,7 +15,8 @@ object Airport {
 
   def csvToAirport(list: Array[String]): Option[Airport] =
     (Try(list(1).toString).toOption, Try(list(8).toString).toOption) match {
-      case (Some(x), Some(y)) => Some(Airport(x, list(3), list(4), list(5), list(6), list(7), y, list(9)))
+      case (Some(x), Some(y)) =>  Some(Airport(x.toLowerCase, list(3).toLowerCase, list(4).toLowerCase, list(5).toLowerCase,
+                                  list(6).toLowerCase, list(7).toLowerCase, y.toLowerCase, list(9).toLowerCase))
       case (Some(x), None) => None
       case (None, Some(y)) => None
       case (None, None) => None

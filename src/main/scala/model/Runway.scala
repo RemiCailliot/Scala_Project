@@ -15,7 +15,7 @@ object Runway {
 
   def csvToRunway(list: Array[String]): Option[Runway] =
     (Try(list(2).toString).toOption, Try(list(5).toString).toOption,Try(list(8).toString).toOption) match{
-      case (Some(x), Some(y),Some(z)) => Some(Runway(x,y,z))
+      case (Some(x), Some(y),Some(z)) => Some(Runway(x.toLowerCase,y.toLowerCase,z.toLowerCase))
       case (Some(x), Some(y),None) => None
       case (Some(x), None,Some(z)) => None
       case (None, Some(y),Some(z)) => None

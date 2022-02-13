@@ -12,3 +12,6 @@ libraryDependencies += "org.reactivemongo" %% "reactivemongo" % "1.0.10"
 libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.35"
 libraryDependencies += "org.apache.logging.log4j" % "log4j-api" % "2.17.1"
 libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % "2.17.1"
+
+// https://mvnrepository.com/artifact/org.scalatest/scalatest-funsuite
+libraryDependencies += "org.scalatest" %% "scalatest-funsuite" % "3.2.11" % Test
