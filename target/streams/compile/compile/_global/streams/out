@@ -1,7 +1,16 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\request\Queries.scala:10:45: illegal start of simple expression[0m
-[0m[[0m[31merror[0m] [0m[0m    countries.toList.map(x=> (x.name,x.code=))[0m
-[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Rémi\Desktop\Efrei Paris\M2\Scala Programming\repo_project\Scala_Project\src\main\scala\request\Queries.scala:11:3: ')' expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0mD:\projet scala v3\Scala_Project\src\main\scala\service\Prompt.scala:26:12: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int(1)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m      case 1  => println(report1(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines));[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\projet scala v3\Scala_Project\src\main\scala\service\Prompt.scala:27:12: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int(2)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m      case 2  => println(report2(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines,CSV.read("runways.csv",Runway.csvToRunway).lines));[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\projet scala v3\Scala_Project\src\main\scala\service\Prompt.scala:28:12: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int(3)[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m      case 3  => println(report3(CSV.read("runways.csv",Runway.csvToRunway).lines));[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

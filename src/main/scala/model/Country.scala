@@ -15,7 +15,7 @@ object Country {
 
   def csvToCountry(list: Array[String]): Option[Country] =
     (Try(list(1).toString).toOption, Try(list(2).toString).toOption,Try(list(3).toString).toOption) match {
-      case (Some(x), Some(y), Some(z)) => Some(Country(x, y, z))
+      case (Some(x), Some(y), Some(z)) => Some(Country(x.toLowerCase, y.toLowerCase, z.toLowerCase))
       case (Some(x), None, Some(z)) => None
       case (None, Some(y), Some(z)) => None
       case (Some(x), Some(y), None) => None

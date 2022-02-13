@@ -6,7 +6,6 @@ import model.Runway.Runway
 
 object Queries{
   def query1(codename: String,airports: Iterator[Airport], countries: Iterator[Country],runway: Iterator[Runway]) = {
-    println(codename)
     val country = countries.toList.filter(x=>(x.name==codename || x.code==codename))
     val code,name = country.size match {
       case 1 => (country.head.code, country.head.name)

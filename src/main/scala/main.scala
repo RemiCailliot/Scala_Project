@@ -4,6 +4,7 @@ import reactivemongo.api.MongoConnection
 import request.Queries.query1
 import request.Reports.{report1, report2, report3}
 import service.CSV
+import service.Prompt.getChoice
 
 import scala.concurrent.ExecutionContext
 
@@ -37,17 +38,10 @@ object MainApp extends App{
   println("Country missing values : "+CSV.read("countries.csv",Country.csvToCountry).nbInvalidLine)
   println("Runway missing values : "+CSV.read("runways.csv",Runway.csvToRunway).nbInvalidLine)
   println("\n")
-  println(report1(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines))
-  println("\n")
-  println(report2(CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines,CSV.read("runways.csv",Runway.csvToRunway).lines))
-  println("\n")
-  println(report3(CSV.read("runways.csv",Runway.csvToRunway).lines))
-  println("\n")
-  print(query1("Andorra",CSV.read("airports.csv",Airport.csvToAirport).lines,CSV.read("countries.csv",Country.csvToCountry).lines,CSV.read("runways.csv",Runway.csvToRunway).lines))
 
 
 
-
+  getChoice
 
 
 
